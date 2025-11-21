@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Страны мира</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-md" >
+        <a class="navbar-brand" href="#">Страны мира</a>  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="practice_4.html" title="Переход на главную страницу">Главная страница</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" title="Переход к описанию континентов">Континенты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="list_country.html" title="Переход к списку стран">Список стран</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-md-3">
+                <input class="form-control" type="text" placeholder="Название страны">
+                <button class="btn btn-info text-white" type="submit">Найти</button>
+            </form>
+        </div> 
+    </nav>
+    
+    <div id="gallery" class="carousel slide carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../flags/north_america.png" width="300vw" class="d-block mx-auto" alt="Северная Америка">
+            </div>
+            <div class="carousel-item">
+                <img src="../flags/australia.png" width="300vw" class="d-block mx-auto" alt="Австралия">
+            </div>
+            <div class="carousel-item">
+                <img src="../flags/south_america.png" width="300vw" class="d-block mx-auto" alt="Южная Америка">
+            </div>
+            <div class="carousel-item">
+                <img src="../flags/africa.png" width="300vw" class="d-block mx-auto" alt="Африка">
+            </div>
+            <div class="carousel-item">
+                <img src="../flags/eurasia.png" width="300vw" class="d-block mx-auto" alt="Евразия">
+            </div>
+            <div class="carousel-item">
+                <img src="../flags/antarctica.png" width="300vw" class="d-block mx-auto" alt="Антарктида">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+
+    <div class="container-fluid my-2">
+    <div class="row g-3">
+      <div class="col-lg-8 col-12">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-info bg-opacity-25 rounded-4 p-3 text-center">
+              <img src="../flags/south_africa_flag.png" class="card-img-top rounded mx-auto d-block w-100" height="100vw" alt="Флаг ЮАР">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Южно-Африканская Республика</h4>
+                <p class="card-text flex-grow-1 small">
+                  Южно-Африканская Республика (ЮАР) — государство на южной оконечности Африканского континента, 
+                  уникальное в своём географическом, культурном и политическом разнообразии. Это парламентская республика с 
+                  тремя столицами: Кейптаун (законодательная), Претория (исполнительная) и Блумфонтейн (судебная). 
+                  Страна обладает богатейшими природными ресурсами, включая золото, платину, алмазы и редкоземельные металлы.
+                </p>
+                <a href="south_africa.html">Подробнее>></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-info bg-opacity-25 rounded-4 p-3 text-center">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Норвегия</h4>
+                <p class="card-text flex-grow-1 small">
+                  Королевство Норвегия — суверенное унитарное государство, расположенное в Северной Европе на 
+                  Скандинавском полуострове. Это конституционная монархия, где главой государства является король, 
+                  а реальная исполнительная власть принадлежит правительству во главе с премьер-министром. 
+                  Норвегия обладает уникальной географией: её протяжённая береговая линия изрезана знаменитыми фьордами, 
+                  а значительную часть территории занимают горы и леса.
+                </p>
+                <img src="../flags/norway_flag.png" class="card-img-top rounded mx-auto d-block mt-2 w-100" height="100vw" alt="Флаг Норвегии">
+                <a href="norway.html">Подробнее>></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-info bg-opacity-25 rounded-4 p-3 text-center">
+              <img src="../flags/new_zeeland_flag.png" class="card-img-top rounded mx-auto d-block w-100" height="100vw" alt="Флаг Новой Зеландии">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Новая Зеландия</h4>
+                <p class="card-text flex-grow-1 small">
+                  Новая Зеландия — островное государство в юго-западной части Тихого океана, 
+                  расположенное на двух крупных островах (Северный и Южный) и множестве мелких. 
+                  Это государство в составе Содружества наций, где главой государства формально является британский монарх, 
+                  представленный генерал-губернатором.
+                </p>
+                <a href="new_zeeland.html">Подробнее>></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border-0 bg-info bg-opacity-25 rounded-4 p-3 text-center">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Чили</h4>
+                <p class="card-text flex-grow-1 small">
+                  Чили — государство на юго-западе Южной Америки, уникальной чертой которого является его 
+                  чрезвычайно вытянутая форма. Оно занимает узкую полосу земли между Андами и Тихим океаном, 
+                  простираясь с севера на юг на 4300 км, в то время как его средняя ширина не превышает 180 км.
+                </p>
+                <img src="../flags/chile_flag.png" class="card-img-top rounded mx-auto d-block mt-2 w-100" height="100vw" alt="Флаг Чили">
+                <a href="chile.html">Подробнее>></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-12 ps-lg-4 border-start border-width-3 border-dark">
+        <div class="row g-3">
+          <div class="col-12">
+            <div class="d-flex align-items-center">
+              <div class="flex-grow-1 text-end pe-2">
+                <h4 class="mb-1">Кувейт</h4>
+                <p class="mb-1 small">
+                  Государство Кувейт расположено на северо-востоке Аравийского полуострова и обладает выходом к Персидскому заливу.
+                </p>
+                <a href="kuwait.html" class="btn btn-primary btn-sm">Подробнее>></a>
+              </div>
+              <img src="../flags/kuwait_flag.png" class="ms-2" width="150vw" height="150vw" alt="Флаг Кувейта">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="d-flex align-items-center">
+              <div class="flex-grow-1 text-end pe-2">
+                <h4 class="mb-1">Ангола</h4>
+                <p class="mb-1 small">
+                  Ангола, расположенная в Юго-Западной Африке, является одним из крупнейших и наиболее богатых природными ресурсами государств континента.
+                </p>
+                <a href="angola.html" class="btn btn-primary btn-sm">Подробнее>></a>
+              </div>
+              <img src="../flags/angola_flag.png" class="ms-2" width="150vw" height="150vw" alt="Флаг Анголы">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="d-flex align-items-center">
+              <div class="flex-grow-1 text-end pe-2">
+                <h4 class="mb-1">Аргентина</h4>
+                <p class="mb-1 small">
+                  Аргентина, расположенная в юго-восточной части Южной Америки, является вторым по площади государством на континенте и одной из наиболее развитых его экономик.
+                </p>
+                <a href="argentina.html" class="btn btn-primary btn-sm">Подробнее>></a>
+              </div>
+              <img src="../flags/argentina_flag.png" class="ms-2" width="150vw" height="150vw" alt="Флаг Аргентины">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="d-flex align-items-center">
+              <div class="flex-grow-1 text-end pe-2">
+                <h4 class="mb-1">Мексика</h4>
+                <p class="mb-1 small">
+                  Мексиканские Соединённые Штаты — федеративная республика в Северной Америке, занимающая уникальное положение между США и странами Центральной Америки.
+                </p>
+                <a href="mexico.html" class="btn btn-primary btn-sm">Подробнее>></a>
+              </div>
+              <img src="../flags/mexico_flag.png" class="ms-2" width="150vw" height="150vw" alt="Флаг Мексики">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-light text-center py-4 mt-3">
+    <p class="mb-0 text-primary fw-bold">2025, Б9123-09.03.04 (Программная инженерия), подгруппа 3, Ким Денис Х.</p>
+  </footer>
+</body>
+</html>
