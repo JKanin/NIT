@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="task">
+		<img src="images/parallelogram1.png" id="image">
+		<div class="input">
+			<form>
+				<p>
+					<p class="bold">Выбирите характеристики для вычисления:</p>
+					<input type="radio" name="chars" id="radio1">Стороны (a, b) и высота (h)<br>
+					<input type="radio" name="chars" id="radio2">Сторона (a), высота к другой стороне (h) и меньший угол (α)<br>
+					<p>
+ 						<label for="input1">a = </label>
+						<input type="number" id="input1" min="0" max="200">
+						<label for="input2">b = </label>
+						<input type="number" id="input2" min="0" max="200">
+						<label for="input3">h = </label>
+						<input type="number" id="input3" min="0" max="200">
+					</p>
+					<p><input type="button" value="Показать" id="btn-show"></p>
+				</p>
+				<p>
+					<p id="tasks" class="bold">Найти:</p>
+					<label><input type="checkbox" id="task1">Неизвестная высота</label></br>
+					<label><input type="checkbox" id="task2">Диагонали</label><br>
+					<label><input type="checkbox" id="task3">Площадь</label><br>
+					<label><input type="checkbox" id="task4">Угол между дигоналями</label>
+				</p>
+				<p>
+					<input type="button" value="Вычислить" id="btn-calculate">
+					<input type="button" value="Очистить" id="btn-clear">
+				</p>
+			</form>
+		</div>
+		<div class="output" id="output"></div>	</div>
+</body>
+<script src="program.js"></script>
+</html>
