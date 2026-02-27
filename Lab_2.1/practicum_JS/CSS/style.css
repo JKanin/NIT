@@ -1,0 +1,26 @@
+table {
+	width: 100%;
+	margin: 2% auto;
+	border: thin black 1px;
+	font-size: 0.95em;
+	background-color: grey; 
+}
+
+td {
+	padding: 8px 12px;
+	text-align: center;
+	background-color: lightgrey;
+}
+
+#filter,
+#sort {
+	float: left;
+	width: 44%;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+#sort {
+	margin-right: 0;
+	border: 1px black;
+}
