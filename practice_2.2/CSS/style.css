@@ -1,0 +1,9 @@
+svg {
+	border:thin solid black;
+}
+#setting {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: left;
+}
