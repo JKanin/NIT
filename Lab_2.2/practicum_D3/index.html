@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Трансформация и анимация</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<script src="http://d3js.org/d3.v7.min.js"></script>
+	<script src="JavaScript/image.js"></script>
+	<script src="JavaScript/main.js"></script>
+	<script src="JavaScript/path.js"></script>
+</head>
+<body>
+	<form id="setting">
+		<p id="coords-block">Координаты рисунка<br>
+			<label for="cx">x: </label>
+			<input type="number" id="cx" value="300" max="600" min="0">
+			<label for="cx_finish">до </label>
+			<input type="number" id="cx_finish" value="550" max="600" min="0"><br>
+			<label for="cy">y: </label>
+			<input type="number" id="cy" value="300" max="600" min="0">
+			<label for="cy_finish">до </label>
+			<input type="number" id="cy_finish" value="550" max="600" min="0">
+		</p>
+		<p id="path-block" style="display: none;">Пути перемещения<br>
+			<select id="path-type">
+				<option value="g">Буквой "Г"</option>
+				<option value="circle">По кругу</option>
+			</select>
+		</p>
+		<p id="scale-block">Масштаб<br>
+			<label for="scx">по x: </label>
+			<input type="number" id="scx" value="1" max="10" min="0">
+			<label for="scx_finish">до </label>
+			<input type="number" id="scx_finish" value="1.5" max="10" min="0"><br>
+			<label for="scy">по y: </label>
+			<input type="number" id="scy" value="1" max="10" min="0">
+			<label for="scy_finish">до </label>
+			<input type="number" id="scy_finish" value="1.5" max="10" min="0">
+		</p>
+		<p id="rotation-block">Поворот<br>
+			<label for="rot">угол: </label>
+			<input type="number" id="rot" value="0" max="360" min="0">
+			<label for="rot_finish">до </label>
+			<input type="number" id="rot_finish" value="180" max="360" min="0">
+		</p>
+	</form>
+	<p>
+		<input type="button" value="Нарисовать" id="btn-draw">
+		<input type="button" value="Очистить" id="btn-clear">
+	</p>
+	<p>
+		<input type="checkbox" value="Включить анимацию?" id="check-anim">
+		<label for="check-anim">Включить анимацию?</label>
+		<select id="anim-method" style="display:none;">
+			<option value="linear">linear</option>
+			<option value="elastic">elastic</option>
+			<option value="bounce">bounce</option>
+		</select>
+	</p>
+	<p id="way-block" style="display: none;">
+		<input type="checkbox" id="check-way">
+		<label for="check-way">Перемещение вдоль пути?</label>
+	</p>
+	<p>
+		<input type="button" value="Анимировать" id="btn-anim" style="display:none;">
+	</p>
+	<svg></svg>
+</body>
+</html>
