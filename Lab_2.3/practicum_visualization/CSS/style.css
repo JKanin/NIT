@@ -1,0 +1,30 @@
+table {
+	width: 100%;
+	margin: 2% auto;
+	border: thin black 1px;
+	font-size: 0.95em;
+	background-color: grey; 
+}
+
+td {
+	padding: 8px 12px;
+	text-align: center;
+	background-color: lightgrey;
+}
+
+svg {
+    width: 800px;
+    height: 400px;
+}
+svg text {
+    font: 8px Verdana;
+}
+svg path, line {
+    fill: none;
+    stroke: #333333;
+    width: 1px;
+}
+
+.error {
+    border: 2px solid red;
+}
