@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="CSS/style.css">
+	<script src="http://d3js.org/d3.v7.min.js"></script>
+	<script src="JavaScript/data.js"></script>
+	<script src="JavaScript/main.js"></script>
+	<script src="JavaScript/table.js"></script>
+	<script src="JavaScript/chart.js"></script>
+</head>
+<body>   
+	<h3>Список стран мира</h3>
+	<form id="setting">
+		<p>Значение по оси OX<br>
+			<input type="radio" id="continent" value="continent" name="axisOX" checked>
+			<label for="continent">Континент</label><br>
+			<input type="radio" id="regime" value="regime" name="axisOX">
+			<label for="regime">Режим</label><br>
+			<input type="radio" id="government" value="government" name="axisOX">
+			<label for="government">Форма правления</label>
+		</p>
+		<p>Значение по оси OY<br>
+			<input type="checkbox" id="maxGdp">
+			<label for="maxGdp">Максимальное ВВП на душу населения</label><br>
+			<input type="checkbox" id="minGdp">
+			<label for="minGdp">Минимальное ВВП на душу населения</label>
+		</p>
+		<p>
+			<label for="graphType">Тип графика</label>
+			<select id="graphType">
+				<option value="dot">Точечная диаграмма</option>
+				<option value="hist">Гистограмма</option>
+			</select>
+		</p>
+		<p>
+			<input type="button" value="Построить" id="graphButton">
+		</p>
+	</form>
+	<svg></svg>
+	<p><input type="button" value="Скрыть таблицу" id="hideButton"></p>
+	<table id="countries"></table>
+</body>
+</html>
