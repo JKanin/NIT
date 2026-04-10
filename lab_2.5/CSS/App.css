@@ -1,0 +1,51 @@
+.App td, th {
+    border: thin solid black;
+    padding: 5px 5px; 
+	text-align: center;
+    box-sizing: border-box;
+}
+
+.App th{
+	background-color: lightgrey;
+}
+
+tr.hide {
+    display: none;
+}
+
+.pagination .page {
+    display: inline-block;
+    margin: 0 10px;
+    user-select: none;
+}
+
+.pagination .page:hover {
+    background-color: #e2e6ea;
+    border-color: #adb5bd;
+}
+
+.pagination .page.active {
+    color: blue;
+    font-weight: bold;
+    cursor: default;
+	font-size: 1.2em;
+}
+
+svg {
+    width: 800px;
+    height: 400px;
+}
+
+svg path, line {
+    fill: none;
+    stroke: black;
+    width: 1px;
+}
+ 
+svg text {
+    font: 8px Verdana;
+}
+
+.error {
+    border: 2px solid red;
+}
